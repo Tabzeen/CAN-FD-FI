@@ -1,0 +1,16 @@
+# Cross-compilation for the Zynq UltraScale+ APU (aarch64), using the PetaLinux SDK toolchain
+# (same toolchain the C++ APU apps use, see
+#  sw/sources/cmake/environment-setup-cortexa72-cortexa53-xilinx-linux).
+#
+# Host build / unit tests (no special setup):
+#   cargo build
+#   cargo test
+#
+# Target build for the board:
+#   source <petalinux-sdk>/environment-setup-cortexa72-cortexa53-xilinx-linux
+#   # config.toml cannot expand env vars, so pass the sysroot via RUSTFLAGS:
+#   export CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS="-C link-arg=--sysroot=$SDKTARGETSYSROOT"
+#   cargo build --release --target aarch64-unknown-linux-gnu
+
+[target.aarch64-unknown-linux-gnu]
+linker = "aarch64-xilinx-linux-gcc"

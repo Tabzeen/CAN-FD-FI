@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_func_timer_unit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sys_config_pkg" />
+            <top_module name="tb_func_timer_unit" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,214,217.225 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,217,114.055 ns"></ZoomEndTime>
+      <Cursor1Time time="1,221,402.256 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <ValueColumnWidth column_width="149"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="53" />
+   <wvobject type="other" fp_name="/tb_func_timer_unit/xcv_curr_test_vec">
+      <obj_property name="ElementShortName">xcv_curr_test_vec</obj_property>
+      <obj_property name="ObjectShortName">xcv_curr_test_vec</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/xcv_curr_bit_idx">
+      <obj_property name="ElementShortName">xcv_curr_bit_idx</obj_property>
+      <obj_property name="ObjectShortName">xcv_curr_bit_idx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut_reset_n">
+      <obj_property name="ElementShortName">uut_reset_n</obj_property>
+      <obj_property name="ObjectShortName">uut_reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut_can_rx_i">
+      <obj_property name="ElementShortName">uut_can_rx_i</obj_property>
+      <obj_property name="ObjectShortName">uut_can_rx_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/rx_falling">
+      <obj_property name="ElementShortName">rx_falling</obj_property>
+      <obj_property name="ObjectShortName">rx_falling</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/sample_strb">
+      <obj_property name="ElementShortName">sample_strb</obj_property>
+      <obj_property name="ObjectShortName">sample_strb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/sample_buf">
+      <obj_property name="ElementShortName">sample_buf</obj_property>
+      <obj_property name="ObjectShortName">sample_buf</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/smgmt_tu_state">
+      <obj_property name="ElementShortName">smgmt_tu_state</obj_property>
+      <obj_property name="ObjectShortName">smgmt_tu_state</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/tu_active">
+      <obj_property name="ElementShortName">tu_active</obj_property>
+      <obj_property name="ObjectShortName">tu_active</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/cfg_ready">
+      <obj_property name="ElementShortName">cfg_ready</obj_property>
+      <obj_property name="ObjectShortName">cfg_ready</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/strb_cnt">
+      <obj_property name="ElementShortName">strb_cnt</obj_property>
+      <obj_property name="ObjectShortName">strb_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/btl_tq_cnt">
+      <obj_property name="ElementShortName">btl_tq_cnt</obj_property>
+      <obj_property name="ObjectShortName">btl_tq_cnt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/btl_soft_resync">
+      <obj_property name="ElementShortName">btl_soft_resync</obj_property>
+      <obj_property name="ObjectShortName">btl_soft_resync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/bit_start">
+      <obj_property name="ElementShortName">bit_start</obj_property>
+      <obj_property name="ObjectShortName">bit_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/can_rx_i">
+      <obj_property name="ElementShortName">can_rx_i</obj_property>
+      <obj_property name="ObjectShortName">can_rx_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/can_tx_o">
+      <obj_property name="ElementShortName">can_tx_o</obj_property>
+      <obj_property name="ObjectShortName">can_tx_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/brs_pend_stat_i">
+      <obj_property name="ElementShortName">brs_pend_stat_i</obj_property>
+      <obj_property name="ObjectShortName">brs_pend_stat_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/crc_del_pend_stat_i">
+      <obj_property name="ElementShortName">crc_del_pend_stat_i</obj_property>
+      <obj_property name="ObjectShortName">crc_del_pend_stat_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/err_stat_i">
+      <obj_property name="ElementShortName">err_stat_i</obj_property>
+      <obj_property name="ObjectShortName">err_stat_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/hard_sync_req_i">
+      <obj_property name="ElementShortName">hard_sync_req_i</obj_property>
+      <obj_property name="ObjectShortName">hard_sync_req_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/eof_stat_i">
+      <obj_property name="ElementShortName">eof_stat_i</obj_property>
+      <obj_property name="ObjectShortName">eof_stat_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_timer_unit/fsm_eof_flag_sft">
+      <obj_property name="ElementShortName">fsm_eof_flag_sft[0:7]</obj_property>
+      <obj_property name="ObjectShortName">fsm_eof_flag_sft[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/active_ph1_len">
+      <obj_property name="ElementShortName">active_ph1_len</obj_property>
+      <obj_property name="ObjectShortName">active_ph1_len</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/active_ph2_len">
+      <obj_property name="ElementShortName">active_ph2_len</obj_property>
+      <obj_property name="ObjectShortName">active_ph2_len</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/active_brp">
+      <obj_property name="ElementShortName">active_brp</obj_property>
+      <obj_property name="ObjectShortName">active_brp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/brs_en">
+      <obj_property name="ElementShortName">brs_en</obj_property>
+      <obj_property name="ObjectShortName">brs_en</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/end_val_ph1">
+      <obj_property name="ElementShortName">end_val_ph1</obj_property>
+      <obj_property name="ObjectShortName">end_val_ph1</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/btl_tq_cnt_r">
+      <obj_property name="ElementShortName">btl_tq_cnt_r</obj_property>
+      <obj_property name="ObjectShortName">btl_tq_cnt_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/can_tx_buf_r">
+      <obj_property name="ElementShortName">can_tx_buf_r</obj_property>
+      <obj_property name="ObjectShortName">can_tx_buf_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/can_tx_buf">
+      <obj_property name="ElementShortName">can_tx_buf</obj_property>
+      <obj_property name="ObjectShortName">can_tx_buf</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/active_fip_r">
+      <obj_property name="ElementShortName">active_fip_r</obj_property>
+      <obj_property name="ObjectShortName">active_fip_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/injection_arm_i">
+      <obj_property name="ElementShortName">injection_arm_i</obj_property>
+      <obj_property name="ObjectShortName">injection_arm_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/psp_strb">
+      <obj_property name="ElementShortName">psp_strb</obj_property>
+      <obj_property name="ObjectShortName">psp_strb</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/active_psp_r">
+      <obj_property name="ElementShortName">active_psp_r</obj_property>
+      <obj_property name="ObjectShortName">active_psp_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut_cfg_en_i">
+      <obj_property name="ElementShortName">uut_cfg_en_i</obj_property>
+      <obj_property name="ObjectShortName">uut_cfg_en_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/fsm_cfg">
+      <obj_property name="ElementShortName">fsm_cfg</obj_property>
+      <obj_property name="ObjectShortName">fsm_cfg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/xcvr_mode_r">
+      <obj_property name="ElementShortName">xcvr_mode_r</obj_property>
+      <obj_property name="ObjectShortName">xcvr_mode_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/active_a_r">
+      <obj_property name="ElementShortName">active_a_r</obj_property>
+      <obj_property name="ObjectShortName">active_a_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/active_b_r">
+      <obj_property name="ElementShortName">active_b_r</obj_property>
+      <obj_property name="ObjectShortName">active_b_r</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/cfg_ssp_i">
+      <obj_property name="ElementShortName">cfg_ssp_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_ssp_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/ssp_snapshot_tq">
+      <obj_property name="ElementShortName">ssp_snapshot_tq</obj_property>
+      <obj_property name="ObjectShortName">ssp_snapshot_tq</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_timer_unit/uut/td_cnt_r">
+      <obj_property name="ElementShortName">td_cnt_r[9:0]</obj_property>
+      <obj_property name="ObjectShortName">td_cnt_r[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_timer_unit/uut/td_measure_start_r">
+      <obj_property name="ElementShortName">td_measure_start_r[9:0]</obj_property>
+      <obj_property name="ObjectShortName">td_measure_start_r[9:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/td_measure_active_r">
+      <obj_property name="ElementShortName">td_measure_active_r</obj_property>
+      <obj_property name="ObjectShortName">td_measure_active_r</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_timer_unit/uut/cnt_start_delta_b">
+      <obj_property name="ElementShortName">cnt_start_delta_b[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_start_delta_b[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/td_hold_edge_r">
+      <obj_property name="ElementShortName">td_hold_edge_r</obj_property>
+      <obj_property name="ObjectShortName">td_hold_edge_r</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_timer_unit/uut/end_val_ph2">
+      <obj_property name="ElementShortName">end_val_ph2</obj_property>
+      <obj_property name="ObjectShortName">end_val_ph2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_timer_unit/uut/xcvr_delay_r">
+      <obj_property name="ElementShortName">xcvr_delay_r[9:0]</obj_property>
+      <obj_property name="ObjectShortName">xcvr_delay_r[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/td_measure_active_r">
+      <obj_property name="ElementShortName">td_measure_active_r</obj_property>
+      <obj_property name="ObjectShortName">td_measure_active_r</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_timer_unit/uut/td_measure_start_r">
+      <obj_property name="ElementShortName">td_measure_start_r[9:0]</obj_property>
+      <obj_property name="ObjectShortName">td_measure_start_r[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/rx_falling">
+      <obj_property name="ElementShortName">rx_falling</obj_property>
+      <obj_property name="ObjectShortName">rx_falling</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_timer_unit/uut/tx_falling">
+      <obj_property name="ElementShortName">tx_falling</obj_property>
+      <obj_property name="ObjectShortName">tx_falling</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,18 @@
+[package]
+name = "rust_can_fd_fi_test"
+version = "0.1.0"
+edition = "2021"
+description = "Example/test app exercising the generated can_fd_fi register accessor over UIO."
+
+[[bin]]
+name = "rust_can_fd_fi_test"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.6.5", features = ["derive"] }
+# UIO userspace driver access (/dev/uioN + sysfs discovery + mmap).
+# The generated register accessor itself is std/core-only.
+uio = "0.6"
+
+[profile.release]
+opt-level = 2

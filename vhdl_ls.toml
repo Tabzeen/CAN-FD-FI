@@ -1,0 +1,31 @@
+[libraries]
+vunit_lib.files = [
+    '.venv/lib/python3.*/site-packages/vunit/vhdl/**/*.vhd'
+]
+
+axi_lite.files = [
+    '../../external/git_hdl_modules/modules/axi_lite/**/*.vhd'
+]
+
+bfm.files = [
+    '../../external/git_hdl_modules/modules/bfm/**/*.vhd'
+]
+
+common.files = [
+    '../../external/git_hdl_modules/modules/common/**/*.vhd'
+]
+
+register_file.files = [
+    '../../external/git_hdl_modules/modules/register_file/**/*.vhd'
+]
+
+teroshdlDefault.files = [
+    'gen/hdl/**/*.vhd',
+    'src/hdl/**/*.vhd',
+    'src/sim/**/*.vhd'
+]
+
+
+xpm.files = [
+    '/ks/eda/xilinx_2024.1/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd'
+]

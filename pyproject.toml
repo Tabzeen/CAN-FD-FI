@@ -1,0 +1,44 @@
+[project]
+name = "can_fd_fi_registers"
+version = "0.1.0"
+description = "hdl-registers code generation for the can_fd_fi IP core"
+requires-python = ">=3.10"
+# hdl-registers pulls its own runtime deps transitively (tsfpga, black, GitPython, rtoml,
+# peakrdl-regblock, PyYAML, docutils, termcolor, tomli-w), so this single pin reproduces the
+# generation-relevant part of scripts/environment.yml.
+#
+# vunit-hdl arrives transitively via tsfpga, which requires it unpinned; without an explicit
+# pin that resolves to 4.7.1, whose VHDL libraries lack get_seed/string_seed_t. The BFMs in
+# the hdl-modules submodule use those, so the AXI testbench cannot elaborate against 4.7.1.
+# 5.0.0 has only ever shipped dev releases, hence the pre-release pin (matches
+# scripts/environment.yml).
+dependencies = [
+    "hdl-registers==8.1.0",
+    "vunit-hdl==5.0.0.dev10",
+]
+
+[tool.pdm]
+distribution = false
+# Required for the vunit-hdl pre-release pin above.
+allow_prereleases = true
+
+[tool.pdm.scripts]
+# `pdm generate` regenerates the VHDL + C++ + Rust register artifacts into gen/.
+generate = "python scripts/generate_registers.py"
+format = "ruff format"
+check = "ruff check"
+test = "pytest -n auto"
+
+[tool.ruff]
+indent-width = 4
+line-length = 140
+
+[tool.ruff.lint]
+ignore = ["F405", "F403"]
+
+[tool.ruff.format]
+indent-style = "space"
+
+[dependency-groups]
+check = ["ruff>=0.12.4"]
+test = ["pytest>=8.4.1", "pytest-xdist[psutil]>=3.8.0"]

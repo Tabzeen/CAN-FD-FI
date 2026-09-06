@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_func_can_fsm_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="can_test_vec_pkg" />
+            <top_module name="sys_config_pkg" />
+            <top_module name="tb_func_can_fsm" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,392,076.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,393,358.667 ns"></ZoomEndTime>
+      <Cursor1Time time="1,393,145.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="254"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/curr_test_idx">
+      <obj_property name="ElementShortName">curr_test_idx</obj_property>
+      <obj_property name="ObjectShortName">curr_test_idx</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/curr_test_vector_idx">
+      <obj_property name="ElementShortName">curr_test_vector_idx</obj_property>
+      <obj_property name="ObjectShortName">curr_test_vector_idx</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/bs_state">
+      <obj_property name="ElementShortName">bs_state</obj_property>
+      <obj_property name="ObjectShortName">bs_state</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/dlc_buffer">
+      <obj_property name="ElementShortName">dlc_buffer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dlc_buffer[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/uut/bs_crc_mode">
+      <obj_property name="ElementShortName">bs_crc_mode</obj_property>
+      <obj_property name="ObjectShortName">bs_crc_mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/bs_shift">
+      <obj_property name="ElementShortName">bs_shift[4:0]</obj_property>
+      <obj_property name="ObjectShortName">bs_shift[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/bs_crc_cnt">
+      <obj_property name="ElementShortName">bs_crc_cnt</obj_property>
+      <obj_property name="ObjectShortName">bs_crc_cnt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/uut/bs_insert">
+      <obj_property name="ElementShortName">bs_insert</obj_property>
+      <obj_property name="ObjectShortName">bs_insert</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/bs_shift">
+      <obj_property name="ElementShortName">bs_shift[4:0]</obj_property>
+      <obj_property name="ObjectShortName">bs_shift[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/uut/bs_disable">
+      <obj_property name="ElementShortName">bs_disable</obj_property>
+      <obj_property name="ObjectShortName">bs_disable</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/can_bit_type">
+      <obj_property name="ElementShortName">can_bit_type</obj_property>
+      <obj_property name="ObjectShortName">can_bit_type</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/fsm_state">
+      <obj_property name="ElementShortName">fsm_state</obj_property>
+      <obj_property name="ObjectShortName">fsm_state</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/fsm_cnt">
+      <obj_property name="ElementShortName">fsm_cnt</obj_property>
+      <obj_property name="ObjectShortName">fsm_cnt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/uut/ext_id">
+      <obj_property name="ElementShortName">ext_id</obj_property>
+      <obj_property name="ObjectShortName">ext_id</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/uut/fd_mode">
+      <obj_property name="ElementShortName">fd_mode</obj_property>
+      <obj_property name="ObjectShortName">fd_mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/dlc_buffer">
+      <obj_property name="ElementShortName">dlc_buffer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dlc_buffer[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/id_buffer">
+      <obj_property name="ElementShortName">id_buffer[28:0]</obj_property>
+      <obj_property name="ObjectShortName">id_buffer[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/data_width">
+      <obj_property name="ElementShortName">data_width</obj_property>
+      <obj_property name="ObjectShortName">data_width</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/crc_width">
+      <obj_property name="ElementShortName">crc_width</obj_property>
+      <obj_property name="ObjectShortName">crc_width</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/data_width">
+      <obj_property name="ElementShortName">data_width</obj_property>
+      <obj_property name="ObjectShortName">data_width</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_func_can_fsm/uut/crc_width">
+      <obj_property name="ElementShortName">crc_width</obj_property>
+      <obj_property name="ObjectShortName">crc_width</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/tb_ctrl_buffer">
+      <obj_property name="ElementShortName">tb_ctrl_buffer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_ctrl_buffer[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/tb_data_buffer">
+      <obj_property name="ElementShortName">tb_data_buffer[511:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_data_buffer[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/tb_crc_stf_buffer">
+      <obj_property name="ElementShortName">tb_crc_stf_buffer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_crc_stf_buffer[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/uut/tb_crc_buffer">
+      <obj_property name="ElementShortName">tb_crc_buffer[20:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_crc_buffer[20:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/tb_dlc_buffer">
+      <obj_property name="ElementShortName">tb_dlc_buffer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dlc_buffer[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_func_can_fsm/tb_id_buffer">
+      <obj_property name="ElementShortName">tb_id_buffer[28:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_id_buffer[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/sample_i">
+      <obj_property name="ElementShortName">sample_i</obj_property>
+      <obj_property name="ObjectShortName">sample_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/uut/sample_buf">
+      <obj_property name="ElementShortName">sample_buf</obj_property>
+      <obj_property name="ObjectShortName">sample_buf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/sleep_i">
+      <obj_property name="ElementShortName">sleep_i</obj_property>
+      <obj_property name="ObjectShortName">sleep_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_func_can_fsm/eof_stat_o">
+      <obj_property name="ElementShortName">eof_stat_o</obj_property>
+      <obj_property name="ObjectShortName">eof_stat_o</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_ref_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="reference_data_set_1" />
+            <top_module name="tb_ref" />
+            <top_module name="tb_ref_defs" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,507.468096 us"></ZoomStartTime>
+      <ZoomEndTime time="1,527.197021 us"></ZoomEndTime>
+      <Cursor1Time time="1,511.256250 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="46" />
+   <wvobject type="other" fp_name="/tb_ref/curr_test_vec">
+      <obj_property name="ElementShortName">curr_test_vec</obj_property>
+      <obj_property name="ObjectShortName">curr_test_vec</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/uut_can_rx_i">
+      <obj_property name="ElementShortName">uut_can_rx_i</obj_property>
+      <obj_property name="ObjectShortName">uut_can_rx_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/can_rx_buf">
+      <obj_property name="ElementShortName">can_rx_buf</obj_property>
+      <obj_property name="ObjectShortName">can_rx_buf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/can_tx_buf">
+      <obj_property name="ElementShortName">can_tx_buf</obj_property>
+      <obj_property name="ObjectShortName">can_tx_buf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/strb_cnt">
+      <obj_property name="ElementShortName">strb_cnt</obj_property>
+      <obj_property name="ObjectShortName">strb_cnt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/strb_tick">
+      <obj_property name="ElementShortName">strb_tick</obj_property>
+      <obj_property name="ObjectShortName">strb_tick</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/smgmt_tq_cnt">
+      <obj_property name="ElementShortName">smgmt_tq_cnt</obj_property>
+      <obj_property name="ObjectShortName">smgmt_tq_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/smgmt_bit_cnt">
+      <obj_property name="ElementShortName">smgmt_bit_cnt</obj_property>
+      <obj_property name="ObjectShortName">smgmt_bit_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/btl_tq_cnt">
+      <obj_property name="ElementShortName">btl_tq_cnt</obj_property>
+      <obj_property name="ObjectShortName">btl_tq_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/smgmt_tu_state">
+      <obj_property name="ElementShortName">smgmt_tu_state</obj_property>
+      <obj_property name="ObjectShortName">smgmt_tu_state</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/sleep_o">
+      <obj_property name="ElementShortName">sleep_o</obj_property>
+      <obj_property name="ObjectShortName">sleep_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/btl_hold_edge">
+      <obj_property name="ElementShortName">btl_hold_edge</obj_property>
+      <obj_property name="ObjectShortName">btl_hold_edge</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/rx_falling">
+      <obj_property name="ElementShortName">rx_falling</obj_property>
+      <obj_property name="ObjectShortName">rx_falling</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/bit_start">
+      <obj_property name="ElementShortName">bit_start</obj_property>
+      <obj_property name="ObjectShortName">bit_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/sample_strb">
+      <obj_property name="ElementShortName">sample_strb</obj_property>
+      <obj_property name="ObjectShortName">sample_strb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/sample_o">
+      <obj_property name="ElementShortName">sample_o</obj_property>
+      <obj_property name="ObjectShortName">sample_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/brs_en">
+      <obj_property name="ElementShortName">brs_en</obj_property>
+      <obj_property name="ObjectShortName">brs_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/hard_sync_req">
+      <obj_property name="ElementShortName">hard_sync_req</obj_property>
+      <obj_property name="ObjectShortName">hard_sync_req</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/eof_stat">
+      <obj_property name="ElementShortName">eof_stat</obj_property>
+      <obj_property name="ObjectShortName">eof_stat</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/parser_flags_valid_i">
+      <obj_property name="ElementShortName">parser_flags_valid_i</obj_property>
+      <obj_property name="ObjectShortName">parser_flags_valid_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/FSM_INST/parser_flags_valid_o">
+      <obj_property name="ElementShortName">parser_flags_valid_o</obj_property>
+      <obj_property name="ObjectShortName">parser_flags_valid_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/FSM_INST/flags_valid">
+      <obj_property name="ElementShortName">flags_valid</obj_property>
+      <obj_property name="ObjectShortName">flags_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/cfg_ready">
+      <obj_property name="ElementShortName">cfg_ready</obj_property>
+      <obj_property name="ObjectShortName">cfg_ready</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/active_brp">
+      <obj_property name="ElementShortName">active_brp</obj_property>
+      <obj_property name="ObjectShortName">active_brp</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/FSM_INST/bs_state">
+      <obj_property name="ElementShortName">bs_state</obj_property>
+      <obj_property name="ObjectShortName">bs_state</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/FSM_INST/fsm_cnt">
+      <obj_property name="ElementShortName">fsm_cnt</obj_property>
+      <obj_property name="ObjectShortName">fsm_cnt</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/FSM_INST/fsm_state">
+      <obj_property name="ElementShortName">fsm_state</obj_property>
+      <obj_property name="ObjectShortName">fsm_state</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_ref/TU_INST/cfg_en_i">
+      <obj_property name="ElementShortName">cfg_en_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_en_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_brp_data_i">
+      <obj_property name="ElementShortName">cfg_brp_data_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_brp_data_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/active_ph1_len">
+      <obj_property name="ElementShortName">active_ph1_len</obj_property>
+      <obj_property name="ObjectShortName">active_ph1_len</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/active_ph2_len">
+      <obj_property name="ElementShortName">active_ph2_len</obj_property>
+      <obj_property name="ObjectShortName">active_ph2_len</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/active_prop_len">
+      <obj_property name="ElementShortName">active_prop_len</obj_property>
+      <obj_property name="ObjectShortName">active_prop_len</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/active_sjw">
+      <obj_property name="ElementShortName">active_sjw</obj_property>
+      <obj_property name="ObjectShortName">active_sjw</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/resync_target_ph1">
+      <obj_property name="ElementShortName">resync_target_ph1</obj_property>
+      <obj_property name="ObjectShortName">resync_target_ph1</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/resync_target_ph2">
+      <obj_property name="ElementShortName">resync_target_ph2</obj_property>
+      <obj_property name="ObjectShortName">resync_target_ph2</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_brp_nomi_i">
+      <obj_property name="ElementShortName">cfg_brp_nomi_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_brp_nomi_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_ph1_len_data_i">
+      <obj_property name="ElementShortName">cfg_ph1_len_data_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_ph1_len_data_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_ph1_len_nomi_i">
+      <obj_property name="ElementShortName">cfg_ph1_len_nomi_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_ph1_len_nomi_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_ph2_len_data_i">
+      <obj_property name="ElementShortName">cfg_ph2_len_data_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_ph2_len_data_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_ph2_len_nomi_i">
+      <obj_property name="ElementShortName">cfg_ph2_len_nomi_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_ph2_len_nomi_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_prop_len_data_i">
+      <obj_property name="ElementShortName">cfg_prop_len_data_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_prop_len_data_i</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_ref/TU_INST/cfg_prop_len_nomi_i">
+      <obj_property name="ElementShortName">cfg_prop_len_nomi_i</obj_property>
+      <obj_property name="ObjectShortName">cfg_prop_len_nomi_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_ref/FSM_INST/id_buffer">
+      <obj_property name="ElementShortName">id_buffer[28:0]</obj_property>
+      <obj_property name="ObjectShortName">id_buffer[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_ref/FSM_INST/dlc_buffer">
+      <obj_property name="ElementShortName">dlc_buffer[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dlc_buffer[3:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,361 @@
+[CORE_INFO]
+mode = "r"
+description = "Magic number of the IP Core"
+info_t.type = "bit_vector"
+info_t.width = 32
+info_t.default_value = 0x4A_4E_49_43
+info_t.description = "Magic number of the IP Core (CINJ)"
+
+[CORE_VERSION]
+mode = "r"
+description = "Version of the IP Core (major.minor.patch + magic valid byte)"
+
+# Fields are declared LSB-first: the first field lands at bit 0.
+# Layout: [31:24] major | [23:16] minor | [15:8] patch | [7:0] magic_valid
+magic_valid.type = "bit_vector"
+magic_valid.width = 8
+magic_valid.default_value = 0xAA
+magic_valid.description = "Magic byte, must read 0xAA to indicate a valid version register"
+
+patch.type = "bit_vector"
+patch.width = 8
+patch.default_value = 0x05
+patch.description = "Patch version (uint8)"
+
+minor.type = "bit_vector"
+minor.width = 8
+minor.default_value = 0x02
+minor.description = "Minor version (uint8)"
+
+major.type = "bit_vector"
+major.width = 8
+major.default_value = 0x01
+major.description = "Major version (uint8)"
+
+[STATUS_FLAGS]
+mode = "r"
+tu_ready_config.type = "bit"
+tu_ready_config.description = "TU Configuration has been applied"
+tu_ready_config.default_value = "1"
+
+inj_err_miss.type = "bit"
+inj_err_miss.description = "OU Injection Error: Bit was not encountered"
+inj_err_miss.default_value = "0"
+
+inj_err_dom.type = "bit"
+inj_err_dom.description = "OU injection Error: Bit was dominant"
+inj_err_dom.default_value = "0"
+
+inj_err_dlc.type = "bit"
+inj_err_dlc.description = "OU Injection Error: DLC did not match Frame DLC"
+inj_err_dlc.default_value = "0"
+
+inj_err_fsm.type = "bit"
+inj_err_fsm.description = "OU Injection Error: FSM encountered an error frame"
+inj_err_fsm.default_value = "0"
+
+[GLOBAL_CONFIG]
+mode = "r_w"
+description = "Global Configuration Register"
+
+cfg_en.type = "bit"
+cfg_en.description = "Configuration Enable: Sets the core to Configuration mode"
+cfg_en.default_value = "0"
+
+cfg_brp_nomi.type = "integer"
+cfg_brp_nomi.description = "BRP for Nominal Configuration"
+cfg_brp_nomi.default_value = 8
+cfg_brp_nomi.min_value = 1
+cfg_brp_nomi.max_value = 32
+
+cfg_brp_data.type = "integer"
+cfg_brp_data.description = "BRP for Data Configuration"
+cfg_brp_data.default_value = 8
+cfg_brp_data.min_value = 1
+cfg_brp_data.max_value = 32
+
+cfg_td_en.type = "bit"
+cfg_td_en.description = "Configures if TD should be measured during Transceiver-mode"
+cfg_td_en.default_value = "0"
+
+cfg_ssp.type = "integer"
+cfg_ssp.description = "Secondary Sample Point Delta"
+cfg_ssp.min_value = 0
+cfg_ssp.max_value = 383
+
+[NOMINAL_CONFIG]
+mode = "r_w"
+description = "Nominal Bit Time Configuration (Prop Seg removed per specifications)"
+
+cfg_ph1_len_nomi.type = "integer"
+cfg_ph1_len_nomi.description = "Nominal Phase 1 Length"
+cfg_ph1_len_nomi.min_value = 1
+cfg_ph1_len_nomi.max_value = 255
+
+cfg_ph2_len_nomi.type = "integer"
+cfg_ph2_len_nomi.description = "Nominal Phase 2 Length"
+cfg_ph2_len_nomi.min_value = 1
+cfg_ph2_len_nomi.max_value = 127
+
+cfg_sjw_nomi.type = "integer"
+cfg_sjw_nomi.description = "Nominal SJW"
+cfg_sjw_nomi.min_value = 1
+cfg_sjw_nomi.max_value = 127
+
+[DATA_CONFIG]
+mode = "r_w"
+description = "Data Bit Time Configuration"
+
+cfg_ph1_len_data.type = "integer"
+cfg_ph1_len_data.description = "Data Phase 1 Length"
+cfg_ph1_len_data.min_value = 1
+cfg_ph1_len_data.max_value = 255
+
+cfg_ph2_len_data.type = "integer"
+cfg_ph2_len_data.description = "Data Phase 2 Length"
+cfg_ph2_len_data.min_value = 1
+cfg_ph2_len_data.max_value = 127
+
+cfg_sjw_data.type = "integer"
+cfg_sjw_data.description = "Data SJW"
+cfg_sjw_data.min_value = 1
+cfg_sjw_data.max_value = 127
+
+[FI_CONFIG]
+mode = "r_w"
+description = "Fault Injection specific settings"
+
+cfg_psp_nomi.type = "integer"
+cfg_psp_nomi.description = "Pre-Sample Point position for nominal rate"
+cfg_psp_nomi.min_value = 0
+cfg_psp_nomi.max_value = 255
+
+cfg_psp_data.type = "integer"
+cfg_psp_data.description = "Pre-Sample Point position for data rate"
+cfg_psp_data.min_value = 0
+cfg_psp_data.max_value = 255
+
+cfg_fip_nomi.type = "integer"
+cfg_fip_nomi.description = "Fault Injection Point position for nominal rate"
+cfg_fip_nomi.min_value = 0
+cfg_fip_nomi.max_value = 255
+
+cfg_fip_data.type = "integer"
+cfg_fip_data.description = "Fault Injection Point position for data rate"
+cfg_fip_data.min_value = 0
+cfg_fip_data.max_value = 255
+
+
+# ==========================================
+# Interrupt Register, read to reset Interrupt
+# ==========================================
+
+[IRQ_RST_REG]
+mode = "r"
+description = "Interrupt Reset on Read"
+
+irq_rst.type = "bit_vector"
+irq_rst.width = 32 
+irq_rst.description = "Dummy Value, read to reset interrupt"
+
+
+# ==========================================
+# ID Masks (Repeated 8 times, channels 0-7)
+# ==========================================
+
+[ID_MEM0_MATCH]
+mode = "r_w"
+description = "Register for ID memory 0 match preset"
+idm0_match.type = "bit_vector"
+idm0_match.width = 29
+idm0_match.description = "Value for ID memory 0 match preset"
+
+[ID_MEM0_MASK]
+mode = "r_w"
+description = "Register for ID memory 0 mask preset"
+idm0_mask.type = "bit_vector"
+idm0_mask.width = 29
+idm0_mask.description = "Value for ID memory 0 mask preset"
+
+[ID_MEM0_FIF]
+mode = "r_w"
+description = "Register for ID memory 0 FI-Frame preset"
+idm0_fif.type = "bit_vector"
+idm0_fif.width = 18
+idm0_fif.description = "Value for ID memory 0 FI-Frame preset"
+
+[ID_MEM1_MATCH]
+mode = "r_w"
+description = "Register for ID memory 1 match preset"
+idm1_match.type = "bit_vector"
+idm1_match.width = 29
+idm1_match.description = "Value for ID memory 1 match preset"
+
+[ID_MEM1_MASK]
+mode = "r_w"
+description = "Register for ID memory 1 mask preset"
+idm1_mask.type = "bit_vector"
+idm1_mask.width = 29
+idm1_mask.description = "Value for ID memory 1 mask preset"
+
+[ID_MEM1_FIF]
+mode = "r_w"
+description = "Register for ID memory 1 FI-Frame preset"
+idm1_fif.type = "bit_vector"
+idm1_fif.width = 18
+idm1_fif.description = "Value for ID memory 1 FI-Frame preset"
+
+[ID_MEM2_MATCH]
+mode = "r_w"
+description = "Register for ID memory 2 match preset"
+idm2_match.type = "bit_vector"
+idm2_match.width = 29
+idm2_match.description = "Value for ID memory 2 match preset"
+
+[ID_MEM2_MASK]
+mode = "r_w"
+description = "Register for ID memory 2 mask preset"
+idm2_mask.type = "bit_vector"
+idm2_mask.width = 29
+idm2_mask.description = "Value for ID memory 2 mask preset"
+
+[ID_MEM2_FIF]
+mode = "r_w"
+description = "Register for ID memory 2 FI-Frame preset"
+idm2_fif.type = "bit_vector"
+idm2_fif.width = 18
+idm2_fif.description = "Value for ID memory 2 FI-Frame preset"
+
+[ID_MEM3_MATCH]
+mode = "r_w"
+description = "Register for ID memory 3 match preset"
+idm3_match.type = "bit_vector"
+idm3_match.width = 29
+idm3_match.description = "Value for ID memory 3 match preset"
+
+[ID_MEM3_MASK]
+mode = "r_w"
+description = "Register for ID memory 3 mask preset"
+idm3_mask.type = "bit_vector"
+idm3_mask.width = 29
+idm3_mask.description = "Value for ID memory 3 mask preset"
+
+[ID_MEM3_FIF]
+mode = "r_w"
+description = "Register for ID memory 3 FI-Frame preset"
+idm3_fif.type = "bit_vector"
+idm3_fif.width = 18
+idm3_fif.description = "Value for ID memory 3 FI-Frame preset"
+
+[ID_MEM4_MATCH]
+mode = "r_w"
+description = "Register for ID memory 4 match preset"
+idm4_match.type = "bit_vector"
+idm4_match.width = 29
+idm4_match.description = "Value for ID memory 4 match preset"
+
+[ID_MEM4_MASK]
+mode = "r_w"
+description = "Register for ID memory 4 mask preset"
+idm4_mask.type = "bit_vector"
+idm4_mask.width = 29
+idm4_mask.description = "Value for ID memory 4 mask preset"
+
+[ID_MEM4_FIF]
+mode = "r_w"
+description = "Register for ID memory 4 FI-Frame preset"
+idm4_fif.type = "bit_vector"
+idm4_fif.width = 18
+idm4_fif.description = "Value for ID memory 4 FI-Frame preset"
+
+[ID_MEM5_MATCH]
+mode = "r_w"
+description = "Register for ID memory 5 match preset"
+idm5_match.type = "bit_vector"
+idm5_match.width = 29
+idm5_match.description = "Value for ID memory 5 match preset"
+
+[ID_MEM5_MASK]
+mode = "r_w"
+description = "Register for ID memory 5 mask preset"
+idm5_mask.type = "bit_vector"
+idm5_mask.width = 29
+idm5_mask.description = "Value for ID memory 5 mask preset"
+
+[ID_MEM5_FIF]
+mode = "r_w"
+description = "Register for ID memory 5 FI-Frame preset"
+idm5_fif.type = "bit_vector"
+idm5_fif.width = 18
+idm5_fif.description = "Value for ID memory 5 FI-Frame preset"
+
+[ID_MEM6_MATCH]
+mode = "r_w"
+description = "Register for ID memory 6 match preset"
+idm6_match.type = "bit_vector"
+idm6_match.width = 29
+idm6_match.description = "Value for ID memory 6 match preset"
+
+[ID_MEM6_MASK]
+mode = "r_w"
+description = "Register for ID memory 6 mask preset"
+idm6_mask.type = "bit_vector"
+idm6_mask.width = 29
+idm6_mask.description = "Value for ID memory 6 mask preset"
+
+[ID_MEM6_FIF]
+mode = "r_w"
+description = "Register for ID memory 6 FI-Frame preset"
+idm6_fif.type = "bit_vector"
+idm6_fif.width = 18
+idm6_fif.description = "Value for ID memory 6 FI-Frame preset"
+
+[ID_MEM7_MATCH]
+mode = "r_w"
+description = "Register for ID memory 7 match preset"
+idm7_match.type = "bit_vector"
+idm7_match.width = 29
+idm7_match.description = "Value for ID memory 7 match preset"
+
+[ID_MEM7_MASK]
+mode = "r_w"
+description = "Register for ID memory 7 mask preset"
+idm7_mask.type = "bit_vector"
+idm7_mask.width = 29
+idm7_mask.description = "Value for ID memory 7 mask preset"
+
+[ID_MEM7_FIF]
+mode = "r_w"
+description = "Register for ID memory 7 FI-Frame preset"
+idm7_fif.type = "bit_vector"
+idm7_fif.width = 18
+idm7_fif.description = "Value for ID memory 7 FI-Frame preset"
+
+# ==========================================
+# RAM Address and Data
+# ==========================================
+
+[MU_CFG_BASE]
+mode = "w"
+description = "Register for Memory Unit Configuration"
+
+ram_data_valid.type = "bit"
+ram_data_valid.description = "Tells the slave, that the RAM Data on the bus is valid"
+ram_data_valid.default_value = "0"
+
+[MU_CFG_ADDR]
+mode = "w"
+description = "Address offset in RAM in which the RAM Segment is written"
+
+ram_data_address.type = "bit_vector"
+ram_data_address.width = 15
+ram_data_address.description = "Target segment address in the ID memory, where the 32 bit payload should be placed. Address = entry_index * 32 + segment_index, with segment_index in 0..17 covering the 576 bit Data + CRC field. The stride is 32 (a power of two) so entry and segment are plain bit-slices of the address; segment_index values 18..31 do not exist and are rejected. Addresses at or beyond ID_MEM_ENTRY_COUNT * 32 are also rejected. Any rejected write raises the RAM write error flag."
+ram_data_address.default_value = 0x0001
+
+[MU_RAM_DATA]
+mode = "w"
+description = "RAM data to write into the ID memory"
+ram_data_payload.type = "bit_vector"
+ram_data_payload.width = 32
+ram_data_payload.description = "One 32 bit segment of the 576 bit Data + CRC field, placed at the segment selected by MU_CFG_BASE.ram_data_address"
+ram_data_payload.default_value = 0x0000_0000
