@@ -104,10 +104,10 @@ Worst-case setup slack: **0.358 ns**, worst-case hold slack: **0.017 ns**.
 
 ## External Dependencies
 
-- **HDL-Registers & HDL-Modules:** AXI interface and register generator
-- **CAHHacks:** Override test vector generation
-- **CTU-CAN-FD:** ISO compliance reference vectors
-- **Clap:** Command-line parsing for the Rust target utility
+- **[HDL-Registers](https://github.com/hdl-registers/hdl-registers) & [HDL-Modules](https://github.com/hdl-modules/hdl-modules):** AXI interface and register generator
+- **[CANHacks](https://github.com/kentindell/canhack):** Override test vector generation
+- **[CTU-CAN-FD](https://github.com/Logic-Design-Services/CTU-CAN-FD):** ISO compliance reference vectors
+- **[Clap](https://github.com/clap-rs/clap):** Command-line parsing for the Rust target utility
 
 ## Register File Generation
 
@@ -140,19 +140,15 @@ The CLI scans `/sys/class/uio/uio*/device/of_node` for nodes matching the prefix
 ### Building
 
 From `src/sw/rust_can_fd_fi_test`:
-Bash
-```
+```bash
 # Cross-compilation for 64-bit ARM:
 cargo build --release --target aarch64-unknown-linux-gnu
 
 # Native compilation on target:
 cargo build --release
 ```
-
 ### Usage
-
-Bash
-```
+```bash
 # Inspect available subcommands and injection options
 sudo ./rust_can_fd_fi_test --help
 
