@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata from this file."
+title: "Design and Development of a CAN FD Fault Injector for a Software-Defined-Vehicle Platform"
+version: "1.0"
+date-released: "2026-09-07"
+doi: 10.5281/zenodo.23667575
+repository-code: "https://github.com/Tabzeen/CAN-FD-FI"
+authors:
+  - affiliation: "Bielefeld University"
+    family-names: "Abzanov"
+    given-names: "Talgat"
+license: cc-by-4.0
+keywords:
+  - CAN
+  - CAN-FD
+  - Fault Injection
+  - FPGA
+  - ZYNQ
+  - ZYNQ Ultrascale+
+  - Software-Defined Vehicles
+  - VHDL
+  - RTL
+  - Controller Area Network
+abstract: >-
+  Modern Software-Defined Vehicles are equipped with a variety of different networks. However, despite the introduction of high-speed alternatives, the CAN bus still prevails in modern architectures for safety-critical components. As part of modern Software-Defined Vehicle development, the verification of those components under targeted bus faults remains an essential step, but often requires expensive testing equipment. This thesis introduces an architecture for a protocol-aware, bus-based CAN fault injector targeting Classical CAN and CAN FD frames, which was implemented and evaluated on the FPGA of an AMD Zynq UltraScale+ MPSoC. Across a set of test vectors, its implementation reliably executed fault injections at data rates up to 1.3 Mbps and supported a high sampling rate, meeting strict timing targets at 240 MHz. Furthermore, it delivered injection capabilities previously limited to proprietary fault injection hardware, allowing testing of the most common bit-level faults, ranging from arbitrary protocol bit overrides and stuff-bit errors up to full CRC or payload corruption. The complete design is open-source and is available on GitHub (https://github.com/Tabzeen/CAN-FD-FI)
